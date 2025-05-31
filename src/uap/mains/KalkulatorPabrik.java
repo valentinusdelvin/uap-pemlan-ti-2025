@@ -24,23 +24,23 @@ public class KalkulatorPabrik {
         torus = new Torus(majorRadius, minorRadius);
 
         System.out.println("=============================================");
-        torus.printInfo(); // printInfo diisikan dengan volume, luas permukaan, dan massa [cite: 7]
+        torus.printInfo();
         System.out.println("Massa dalam kg   : " + torus.gramToKilogram());
-        System.out.printf("Biaya kirim      : Rp %.0f%n", torus.calculateCost()); // biaya kirim ditulis dalam format rupiah [cite: 7]
+        System.out.printf("Biaya kirim      : Rp %.0f%n", torus.calculateCost());
         System.out.println("=============================================");
 
-        // Sphere Calculation (Donat tanpa lubang) [cite: 12]
+       
         Sphere sphere = new Sphere();
         System.out.println(sphere.getName());
         System.out.println("=============================================");
-        System.out.print("Isikan radius    : "); // Isikan radius (input pengguna, isi dengan 21) [cite: 12]
+        System.out.print("Isikan radius    : ");
         double radius = input.nextDouble();
-        sphere = new Sphere(radius); // Create new Sphere object with user input
+        sphere = new Sphere(radius);
 
         System.out.println("=============================================");
-        sphere.printInfo(); // printInfo diisikan dengan volume, luas permukaan, dan massa [cite: 7]
+        sphere.printInfo();
         System.out.println("Massa dalam kg   : " + sphere.gramToKilogram());
-        System.out.printf("Biaya kirim      : Rp %.0f%n", sphere.calculateCost()); // biaya kirim ditulis dalam format rupiah [cite: 7]
+        System.out.printf("Biaya kirim      : Rp %.0f%n", sphere.calculateCost());
         System.out.println("=============================================");
 
         input.close();
